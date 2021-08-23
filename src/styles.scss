@@ -1,1 +1,184 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 20px;
+  color: #1e3282;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #45b491;
+}
+h1 {
+  font-size: 50px;
+  color: #1e3282;
+  @media screen and (max-width: 991px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+h2 {
+  font-size: 40px;
+  @media screen and (max-width: 991px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+  }
+  small {
+    font-size: 25px;
+  }
+}
+h4 {
+  font-size: 25px;
+  @media screen and (max-width: 991px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+.btn-primary {
+  background: #45b491;
+  border-color: #45b491;
+  border-radius: 10px;
+  padding: 0.7rem 1rem !important;
+  @media screen and (max-width: 767px) {
+    padding: 0.7rem 0.5rem !important;
+  }
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 55;
+}
+.main-banner {
+  height: 100vh;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.section1 {
+  background-color: #ebeff9;
+  .text-block {
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  h5 {
+    font-size: 25px;
+    color: #1e3282;
+  }
+  .pricing {
+    position: absolute;
+    background: #f59114;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 22px;
+    color: #fff;
+    transform: rotate(20deg);
+    right: -45px;
+    top: -70px;
+    @media screen and (max-width: 767px) {
+      right: 0;
+      top: -120px;
+    }
+  }
+}
+.section2 {
+  background-color: #ebeff9;
+  padding: 5rem 0;
+}
+.section3 {
+  padding: 5rem 0;
+  .item {
+    border: 5px solid #ebeff9;
+    border-radius: 10px;
+    padding: 25px 20px 10px 20px;
+    .cont {
+      @media screen and (max-width: 767px) {
+        margin-left: 20px;
+      }
+      h4 {
+        margin: 20px 0;
+        @media screen and (max-width: 767px) {
+          margin: 5px 0;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+      display: flex;
+      text-align: left;
+      font-size: 14px;
+      align-items: center;
+    }
+    img {
+      max-height: 100px;
+      @media screen and (max-width: 767px) {
+        max-width: 100px;
+        max-height: none;
+      }
+    }
+  }
+}
+.section4 {
+  padding: 5rem 0;
+  background-color: #ebeff9;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  img {
+    max-height: 110px;
+    margin-right: -125px;
+  }
+  .bottom-area {
+    background: #fff;
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+    h2 {
+      line-height: 30px;
+    }
+    .btn {
+      right: -110px;
+      position: relative;
+      @media screen and (max-width: 1024px) {
+        right: 0;
+      }
+    }
+  }
+}
+.sticky-btn {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
+.custom-sticky-hide {
+  opacity: 0;
+}
